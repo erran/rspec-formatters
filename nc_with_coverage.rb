@@ -4,7 +4,7 @@ require 'rspec/core/formatters/base_text_formatter'
 require 'rspec/core/notifications'
 require 'terminal-notifier'
 
-class NcWithCoverageLink < RSpec::Core::Formatters::BaseTextFormatter
+class NcWithCoverage < RSpec::Core::Formatters::BaseTextFormatter
   RSpec::Core::Formatters.register self, :dump_summary
 
   SizeResponder = Struct.new(:size)
